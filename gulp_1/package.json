@@ -1,0 +1,7 @@
+{
+  "name": "demo",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-iconfont": "^1.0.0"
+  }
+}
