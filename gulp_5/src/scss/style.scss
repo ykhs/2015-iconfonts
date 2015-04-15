@@ -1,0 +1,5 @@
+@import "_icon.scss";
+
+.example{
+  @include icon( right );
+}
