@@ -13,12 +13,12 @@ gulp.task( 'iconfont', function () {
     fontName: fontName,
     appendCodepoints: true
   } ) )
-  .on( 'codepoints', function( codepoints, options ) {
+  .on( 'glyphs', function( glyphs, options ) {
 
       // CSS templating, e.g.
       gulp.src('./src/icons/icon.css')
       .pipe(consolidate( 'underscore', {
-        glyphs: codepoints,
+        glyphs: glyphs,
         fontName: fontName,
         fontPath: '../fonts/',
         prefix: 'icon'
