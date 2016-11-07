@@ -11,7 +11,7 @@ gulp.task( 'iconfont', function () {
   gulp.src( [ './src/icons/*.svg' ] )
   .pipe( iconfont( {
     fontName: fontName,
-    appendCodepoints: true
+    prependUnicode: true
   } ) )
   .on( 'glyphs', function( glyphs, options ) {
 
