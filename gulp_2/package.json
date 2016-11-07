@@ -1,9 +1,10 @@
 {
   "name": "demo",
   "devDependencies": {
-    "underscore": "^1.8.3",
+    "async": "^2.1.2",
     "gulp": "^3.8.7",
+    "gulp-consolidate": "^0.2.0",
     "gulp-iconfont": "^8.0.1",
-    "gulp-consolidate": "^0.2.0"
+    "underscore": "^1.8.3"
   }
 }
