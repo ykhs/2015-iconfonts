@@ -19,11 +19,11 @@
   line-height: 1;
   vertical-align: middle;
   display: inline-block;
-  
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-<% _.each ( glyphs, function( glyph ) { %>.<%= prefix %>-<%= glyph.name %>:before { content: "\<%= glyph.codepoint.toString( 16 ).toUpperCase() %>"; }
+<% _.each ( glyphs, function( glyph ) { %>.<%= prefix %>-<%= glyph.name %>:before { content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>"; }
 <% } ); %>
